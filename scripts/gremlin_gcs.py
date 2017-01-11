@@ -7,6 +7,7 @@ class GremlinGCS:
     def __init__(self):
         rospy.init_node('gremlin_gcs')
         self.setup_subs()
+        rospy.spin()
 
     def setup_subs(self):
         pass
