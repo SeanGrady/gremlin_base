@@ -7,6 +7,7 @@ class GremlinLogger:
     def __init__(self):
         rospy.init_node('gremlin_logger')
         self.setup_subscribers()
+        establish_database_connection(self)
         rospy.spin()
 
     def setup_subscribers(self):
