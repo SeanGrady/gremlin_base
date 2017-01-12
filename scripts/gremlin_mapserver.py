@@ -6,6 +6,6 @@ import rospy
 class GremlinMapServer:
     def __init__(self):
         rospy.init_node('gremlin_mapserver')
-        self.establish_database_connection()
+        establish_database_connection(self)
         rospy.spin()
 
